@@ -1,3 +1,5 @@
+
+
 from tkinter import *
 from tkinter import messagebox
 
@@ -9,11 +11,11 @@ def unit_converter():
         to_grams=float(store_entry.get())*1000
         to_pounds = float(store_entry.get()) * 2.20462
         to_milligrams = float(store_entry.get())* 1000000
-        text_1.delete(0,END)
+        text_1.delete(0.1,END)
         text_1.insert(END,to_grams)
-        text_2.delete(0,END)
+        text_2.delete(0.1,END)
         text_2.insert(END,  to_pounds)
-        text_3.delete(0,END)
+        text_3.delete(0.1,END)
         text_3.insert(END, to_milligrams)
     except :
         messagebox.showerror("Invalid Input","Please Enter valid weight")
